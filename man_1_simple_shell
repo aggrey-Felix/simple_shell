@@ -1,0 +1,74 @@
+.TH hsh 1 "November 2, 2021" "simple_shell General Commands Manual"
+
+.SH NAME
+
+.B simple_shell - hsh
+- command line interpreter or shell
+
+
+.SH SYNOPSIS
+
+.B  ./hsh
+.I (no options yet)
+
+
+.SH DESCRIPTION
+
+simple_shell is a command line interpreter, or shell, in the tradition of the first Unix shell written by Ken Thompson. This shell is intentionally minimalistic, yet includes the basic functionality of a traditional Unix-like command line interface. simple_shell is desgined to run on the linux environment.
+
+
+.SH OVERVIEW
+
+Reading from either the terminal or files, simple_shell interprets and executes commands.
+
+
+.SH INVOCATION
+
+Compile simple_shell with the GNU Compiler Collection, preferably using gcc plus the below specified flags, as per this example (note the use of the * wildcard which enables all related .c files to be compiled concurrently):
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+simple_shell can be run in interactive mode by entering the below command on the command line followd by "enter." Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter." 
+.P
+.RS
+.B echo 'pwd' | ./hsh
+
+.SH EXECUTABLES
+
+Example of executables:
+.IP
+.br
+.\&
+.RS
+\&$ echo "Example of executables"
+.br
+\&"Example of executables"
+.br
+\&$
+
+
+.B
+.PP
+.SH BUILT-INS
+.PP
+.B There are two builtins in the shell.\
+
+.PP
+env - tells the program to display all of the environment variables with thier values. \
+Also a way to access the values through the shell.
+.PP
+exit - To exit out of the shell user can utilize exit. Exits program with status 0.\
+signal_c - Ignore input signal Ctrl + C
+
+.SH BUGS
+No known bugs at this writing (November 2, 2020).
+Please report any issues to the authors.
+
+.SH AUTHOR
+
+Felix Abongo <aggreyfelix68@gmail.com>
+
+.SH SEE ALSO
+sh
