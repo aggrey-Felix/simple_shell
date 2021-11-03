@@ -63,6 +63,9 @@ int shell_env(void);
 int shell_exit(void);
 int builtin_execute(char **tokens);
 int shell_num_builtins(built_s builtin[]);
+int _myexit(char *line);
+int _myenv(char *line, int counter, char **argv, char **env);
+void signal_c(int sign);
 
 /* prototypes for the helper functions for path linked list */
 char *_getenv(const char *name);
