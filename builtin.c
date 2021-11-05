@@ -1,5 +1,4 @@
-#include "shell.h"
-
+#include "holberton.h"
 /**
 **shell_exit - exits the shell
 **Return: void
@@ -28,7 +27,7 @@
 			i++;
 		}
 		return (0);
-	}
+}
 
 /**
 **builtin_execute - executes the built in functions
