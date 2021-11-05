@@ -1,5 +1,4 @@
-#include "shell.h"
-
+#include "holberton.h"
 /**
  * _which - searches directories in PATH variable for command
  * @command: to search for
