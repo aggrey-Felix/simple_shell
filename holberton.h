@@ -1,5 +1,6 @@
-#ifndef SHELL_H
-#define SHELL_H
+
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,9 +64,6 @@ int shell_env(void);
 int shell_exit(void);
 int builtin_execute(char **tokens);
 int shell_num_builtins(built_s builtin[]);
-int _myexit(char *line);
-int _myenv(char *line, int counter, char **argv, char **env);
-void signal_c(int sign);
 
 /* prototypes for the helper functions for path linked list */
 char *_getenv(const char *name);
@@ -75,4 +73,4 @@ list_s *pathlist(char *variable, list_s *head);
 /* prototypes for free functions */
 void free_all(char **tokens, char *path, char *line, char *fullpath, int flag);
 void free_dp(char **array, unsigned int length);
-#endif /* SHELL_H */
+#endif /* HOLBERTON_H */
